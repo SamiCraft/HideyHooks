@@ -1,0 +1,8 @@
+name: HideyHooks
+version: '${project.version}'
+main: com.samifying.hideyhooks.HideyHooks
+api-version: 1.19
+load: STARTUP
+depend: [ HideyLink ]
+authors: [ Pequla ]
+description: Webhook integration for HideySMP
