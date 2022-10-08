@@ -51,7 +51,7 @@ Example usage:
 PluginManager manager = getServer().getPluginManager();
 HideyHooks hooks = (HideyHooks) manager.getPlugin("HideyHooks");
 if (link == null) {
-  getLogger().severe("HideyLink not found");
+  getLogger().severe("HideyHooks not found");
   manager.disablePlugin(this);
   return;
 }
