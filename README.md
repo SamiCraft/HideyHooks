@@ -50,7 +50,7 @@ Example usage:
 ```java
 PluginManager manager = getServer().getPluginManager();
 HideyHooks hooks = (HideyHooks) manager.getPlugin("HideyHooks");
-if (link == null) {
+if (hooks == null) {
   getLogger().severe("HideyHooks not found");
   manager.disablePlugin(this);
   return;
