@@ -13,7 +13,7 @@
 
     <description>Webhook integration for HideySMP</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -81,5 +81,30 @@
             <version>1.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>club.minnced</groupId>
+            <artifactId>discord-webhooks</artifactId>
+            <version>0.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>pequla-repo</id>
+            <url>https://maven.pequla.com/releases</url>
+        </repository>
+    </distributionManagement>
+
+    <developers>
+        <developer>
+            <name>Pequla</name>
+            <timezone>Europe/Belgrade</timezone>
+            <url>https://github.com/Pequla</url>
+        </developer>
+    </developers>
 </project>
