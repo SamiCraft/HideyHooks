@@ -57,10 +57,8 @@ public final class HideyHooks extends JavaPlugin {
         getLogger().info("Webhook client is ready");
 
         // Discord notification
-        new Thread(() -> {
-            sendSystemEmbed("Server starting");
-            getLogger().info("Plugin loaded, webhook message dispatched");
-        }, "PluginEnabledDispatcher").start();
+        sendSystemEmbed("Server starting");
+        getLogger().info("Plugin loaded, webhook message dispatched");
 
         // Registering listeners
         getLogger().info("Registering listeners");
